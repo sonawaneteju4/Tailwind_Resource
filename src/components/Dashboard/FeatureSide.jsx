@@ -23,7 +23,7 @@ const FeatureSide = () => {
           <div className="lg:text-2xl text-">&#x20B9; 4,200</div>
         </div>{" "}
         <div className="absolute bottom-0 lg:pl-5 mr-2">
-          <img src="/ProductImg/glass.png" className="transform lg:scale-100 scale-150 lg:mb-0 mb-12" alt="" />
+          <img src="/ProductImg/glass.png" className="transform lg:scale-100 scale-125 lg:mb-0 mb-12" alt="" />
         </div>
       </div>
     </>
