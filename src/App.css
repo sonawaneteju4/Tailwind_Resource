@@ -124,3 +124,99 @@
   background: #f2f2f7;
   border-radius: 22px;
 }
+/* Add this CSS to your styles */
+.animated-img {
+  transition: transform 2s ease-in-out;
+}
+
+.img-hidden {
+  transform: translateX(-200%);
+  opacity: 50%;
+}
+.img-hidden2 {
+  transform: translateX(200%);
+  opacity: 100%;
+}
+
+.defBg{
+  background: #f2f2f7;
+}
+
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+.actual-text{
+  color: black;
+}
+
+/* button styling */
+.button {
+  --border-right: 3px;
+  --animation-color: #0ea5e9;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 0.8px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.loginCoverImg{
+  background-image: url('/Gallery/prod (1).jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* padding: 12px 16px; */
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
