@@ -32,7 +32,7 @@ const LoginFrom = () => {
         />
       </div>
       <div className="flex justify-center m-5">
-        <button className="bg-white lg:px-5 px-6 lg:text-base text-xs rounded-full poppins-medium py-2">
+        <button className="bg-white text-black lg:px-5 px-6 lg:text-base text-xs rounded-full poppins-medium py-2">
           Login
         </button>
       </div>

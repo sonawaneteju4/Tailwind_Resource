@@ -6,7 +6,7 @@ const Poster = () => {
       {" "}
       <div className="poster w-full flex items-center justify-between py-8 lg:m-3 mb-2">
         <div>
-          <img src="ProductImg/img.png" alt="sofa" />
+          <img src="/ProductImg/img.png" alt="sofa" />
         </div>
         <div className="text-center">
           <div className="lg:text-2xl text-base poppins-medium mb-5">
@@ -20,7 +20,7 @@ const Poster = () => {
           </div>
         </div>
         <div className="">
-          <img className="" src="ProductImg\‫img1.png" alt="sofa1" />
+        <img className="" src="/ProductImg/‫img1.png" alt="sofa1" />
         </div>
       </div>
     </>

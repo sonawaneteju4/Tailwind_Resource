@@ -1,0 +1,30 @@
+/* Carousel.css */
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.carousel-content {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-item {
+  display: none;
+  width: 100%;
+  opacity: 0;
+  height: 400px;
+  transition: opacity 1s ease-in-out; /* Adjust the duration as needed */
+}
+.carousel-content {
+    transition: opacity 1s ease-in-out; /* Adjust the duration as needed */
+  }
+.carousel-item.active {
+  display: block;
+  opacity: 1;
+}

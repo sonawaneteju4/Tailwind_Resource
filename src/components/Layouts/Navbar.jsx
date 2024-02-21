@@ -153,7 +153,7 @@ const Navbar = () => {
                   }
                   to={items.path}
                 >
-                  {items.navItem}
+                  {items.navItem} 
                 </NavLink>
               </div>
             </li>

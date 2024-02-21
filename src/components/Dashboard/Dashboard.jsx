@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import HeaderBoard from './HeaderBoard'
 import FeaturedProduct from './FeaturedProduct'
 import TopSelling from './TopSelling'
 import Testimonial from './Testimonial'
+import AppContext from '../../context/AppContext'
 const Dashboard = () => {
   return (
     <div>
@@ -10,6 +11,9 @@ const Dashboard = () => {
       <FeaturedProduct />
       <TopSelling />
       <Testimonial/>
+
+
+
     </div>
   );
 };

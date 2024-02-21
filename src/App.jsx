@@ -8,22 +8,24 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Product from "./components/Products/Product";
 import Gallery from "./components/Gallery/Gallery";
 import Login from "./components/Login/Login";
+import Layouts from "./Layouts";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Dashboard />}></Route>
+      <BrowserRouter basename="smartpro">
+        <Routes>
+          <Route path="" element={<Layouts />}>
+            <Route exact path="" element={<Dashboard />}></Route>
             <Route exact path="/services" element={<Services />}></Route>
             <Route exact path="/contact-us" element={<ContactUs />}></Route>
             <Route exact path="/products" element={<Product />}></Route>
             <Route exact path="/gallery" element={<Gallery />}></Route>
             <Route exact path="/login" element={<Login />}></Route>
-          </Routes>
+          </Route>
+        </Routes>
       </BrowserRouter>
     </>
   );
